@@ -3,6 +3,7 @@
  * https://github.com/jackocnr/intl-tel-input.git
  * Licensed under the MIT license
  */
+
 // wrap in UMD - see https://github.com/umdjs/umd/blob/master/jqueryPluginCommonjs.js
 (function(factory) {
     if (typeof define === "function" && define.amd) {
@@ -223,8 +224,6 @@
                 }).appendTo(selectedFlag);
             }
             if (this.options.allowDropdown) {
-                // make element focusable and tab naviagable
-                selectedFlag.attr("tabindex", "0");
                 // CSS triangle
                 $("<div>", {
                     "class": "iti-arrow"
